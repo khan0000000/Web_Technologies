@@ -1,0 +1,2 @@
+# Lab 01 Report
+In this Lab, i have leraned how to use Git/Github for version control. I created a repository and connect it with my local project folder. I practiced adding, commiting, and pushing files to Github. I also learned how to create branches and merge them into main branch. This lab helped me how to understand developers manage and tarack the project changes efficently.
