@@ -13,3 +13,24 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
+
+
+
+/* Navigation links style */
+.nav-link {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* Highlight the active page */
+.nav-link.active {
+    color: red; /* The current page link will appear in red */
+}
+
+/* Optional hover effect */
+.nav-link:hover {
+    color: darkblue;
+}
