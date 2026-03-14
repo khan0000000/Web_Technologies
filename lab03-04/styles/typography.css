@@ -1,0 +1,74 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px gray;
+}
+
+
+/* Google Font 1 */
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+/* Font size units */
+.small-text {
+    font-size: 14px;      /* pixels */
+}
+
+.medium-text {
+    font-size: 1.5em;     /* em unit */
+}
+
+.large-text {
+    font-size: 2rem;      /* rem unit */
+}
+
+
+/* Google Font 2 */
+.playfair {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+/* Text Alignment */
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+
+/* Google Font 3 */
+.pacifico {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+}
+
+/* Text Transformation */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Text Decoration */
+.underline {
+    text-decoration: underline;
+}
+
+/* Text Shadow */
+.shadow {
+    font-size: 24px;
+    text-shadow: 3px 3px 6px black;
+}

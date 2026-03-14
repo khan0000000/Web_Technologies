@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Task 4 - Image Styling</title>
-    <link rel="stylesheet" href="../styles/components.css">
+    <title>Image Styling Portfolio</title>
+    <link rel="stylesheet" href="../styles/image_portfolio.css">
 </head>
 <body>
 
-<h1>Image Gallery</h1>
+<h1>Image Styling Portfolio</h1>
 
-<img src="../images/gallery/pic1.jpg" alt="Pic 1">
-<img src="../images/gallery/pic2.jpg" alt="Pic 2">
-<img src="../images/gallery/pic3.jpg" alt="Pic 3">
+<div class="gallery">
 
-<a href="../index.html">Back to Lab Menu</a>
+    <div class="card">
+        <img src="https://picsum.photos/300/200?1" class="rounded" alt="Rounded">
+        <p>Rounded Corners</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/200/200?2" class="circle" alt="Circle">
+        <p>Circular Image</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/200?3" class="border-shadow" alt="Border Shadow">
+        <p>Border & Shadow</p>
+    </div>
+
+    <div class="card hover-container">
+        <img src="https://picsum.photos/300/200?4" class="hover-effect" alt="Hover">
+        <div class="overlay">
+            <div class="text">Overlay Text</div>
+        </div>
+        <p>Hover Overlay</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/200?5" class="filtered" alt="Filtered">
+        <p>CSS Filter</p>
+    </div>
+
+</div>
 
 </body>
 </html>

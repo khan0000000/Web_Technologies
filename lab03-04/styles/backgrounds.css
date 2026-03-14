@@ -1,18 +1,69 @@
-.box1 {
-    width: 300px;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.box {
+    width: 80%;
     height: 150px;
+    margin: 20px auto;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 1️⃣ Solid Color */
+.solid {
     background-color: teal;
 }
 
-.box2 {
-    width: 300px;
-    height: 150px;
-    background-image: url("../images/backgrounds/bg1.jpg");
-    background-size: cover;
+/* 2️⃣ Image Repeat */
+.repeat {
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-repeat: repeat;
+    color: black;
 }
 
-.box3 {
-    width: 300px;
-    height: 150px;
-    background: linear-gradient(to right, red, yellow);
+/* 3️⃣ Image No Repeat */
+.no-repeat {
+    background-image: url("https://picsum.photos/800/200");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 4️⃣ Linear Gradient */
+.linear-gradient {
+    background: linear-gradient(to right, blue, purple);
+}
+
+/* 5️⃣ Radial Gradient */
+.radial-gradient {
+    background: radial-gradient(circle, orange, red);
+}
+
+/* 6️⃣ Multiple Background Layers */
+.multiple {
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("https://picsum.photos/800/201");
+    background-size: cover;
+    background-position: center;
+}
+
+/* 7️⃣ Background Blend Mode */
+.blend {
+    background-image: 
+        linear-gradient(to right, red, yellow),
+        url("https://picsum.photos/800/202");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
 }

@@ -1,0 +1,113 @@
+/* ---------- BASIC SELECTORS ---------- */
+
+/* 1 Element Selector */
+p {
+    color: blue;
+}
+
+/* 2 ID Selector */
+#main-heading {
+    color: darkred;
+}
+
+/* 3 Class Selector */
+.intro {
+    font-weight: bold;
+}
+
+/* 4 Universal Selector */
+* {
+    font-family: Arial;
+}
+
+/* 5 Group Selector */
+h1, span {
+    background-color: lightgray;
+}
+
+
+
+/* ---------- ATTRIBUTE SELECTORS ---------- */
+
+/* 1 Select input with type text */
+input[type="text"] {
+    border: 2px solid green;
+}
+
+/* 2 Select input with type email */
+input[type="email"] {
+    border: 2px solid blue;
+}
+
+/* 3 Select links with target blank */
+a[target="_blank"] {
+    color: purple;
+}
+
+
+
+/* ---------- COMBINATORS ---------- */
+
+/* 1 Descendant selector */
+div p {
+    background-color: lightyellow;
+}
+
+/* 2 Child selector */
+div > span {
+    color: red;
+}
+
+/* 3 Adjacent sibling selector */
+h1 + p {
+    font-style: italic;
+}
+
+/* 4 General sibling selector */
+h1 ~ a {
+    font-weight: bold;
+}
+
+
+
+/* ---------- PSEUDO CLASSES ---------- */
+
+/* 1 Hover */
+a:hover {
+    color: red;
+}
+
+/* 2 Focus */
+input:focus {
+    background-color: lightblue;
+}
+
+/* 3 First child */
+li:first-child {
+    color: green;
+}
+
+/* 4 Last child */
+li:last-child {
+    color: orange;
+}
+
+/* 5 nth-child */
+li:nth-child(2) {
+    font-weight: bold;
+}
+
+
+
+/* ---------- PSEUDO ELEMENTS ---------- */
+
+/* 1 First letter */
+p::first-letter {
+    font-size: 24px;
+    color: red;
+}
+
+/* 2 First line */
+p::first-line {
+    font-weight: bold;
+}
