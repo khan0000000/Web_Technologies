@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Base Button Style */
+.btn {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Sizes */
+.small {
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.medium {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.large {
+    font-size: 20px;
+    padding: 14px 28px;
+}
+
+/* Colors */
+.primary {
+    background-color: #007bff;
+}
+
+.success {
+    background-color: #28a745;
+}
+
+.danger {
+    background-color: #dc3545;
+}
+
+/* Shapes */
+.rounded {
+    border-radius: 10px;
+}
+
+.pill {
+    border-radius: 50px;
+}
+
+/* Gradient Button */
+.gradient {
+    background: linear-gradient(to right, purple, pink);
+}
+
+/* Hover Effects */
+.btn:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    opacity: 0.9;
+}
+
+/* Focus State */
+.btn:focus {
+    outline: 3px solid orange;
+}
+
+/* Disabled State */
+.btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
+}

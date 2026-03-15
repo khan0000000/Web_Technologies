@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background:#f4f4f4;
+}
+
+/* 1️⃣ Gradient Text (Fixed Compatibility) */
+.gradient-text{
+    font-size:40px;
+    background: linear-gradient(to right, purple, pink);
+    background-clip: text;              /* Standard property */
+    -webkit-background-clip: text;      /* Webkit support */
+    color: transparent;
+}
+
+/* 2️⃣ Custom Checkboxes */
+
+.check-container{
+    display:block;
+    position:relative;
+    padding-left:30px;
+    margin:10px;
+    cursor:pointer;
+    user-select:none;
+}
+
+.check-container input{
+    position:absolute;
+    opacity:0;
+}
+
+.checkmark{
+    position:absolute;
+    left:0;
+    top:2px;
+    height:18px;
+    width:18px;
+    border:2px solid #333;
+    border-radius:4px;
+}
+
+.check-container input:checked ~ .checkmark{
+    background:#007BFF;
+}
+
+/* 3️⃣ Custom Radio Buttons */
+
+.radio-container{
+    display:block;
+    position:relative;
+    padding-left:30px;
+    margin:10px;
+    cursor:pointer;
+    user-select:none;
+}
+
+.radio-container input{
+    position:absolute;
+    opacity:0;
+}
+
+.radiomark{
+    position:absolute;
+    left:0;
+    top:2px;
+    height:18px;
+    width:18px;
+    border:2px solid #333;
+    border-radius:50%;
+}
+
+.radio-container input:checked ~ .radiomark{
+    background:#28a745;
+}
+
+/* 4️⃣ Loading Animation */
+
+.loader{
+    width:50px;
+    height:50px;
+    border:6px solid #ccc;
+    border-top:6px solid #007BFF;
+    border-radius:50%;
+    margin:20px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+}
+
+/* 5️⃣ Text Clipping with Background Image (Fixed) */
+
+.image-text{
+    font-size:60px;
+    background:url("https://picsum.photos/600/300");
+    background-size:cover;
+    background-position:center;
+    background-clip:text;              /* Standard property */
+    -webkit-background-clip:text;      /* Webkit support */
+    color:transparent;
+}
+
+/* 6️⃣ Complex Shadow Effects */
+
+.shadow-box{
+    width:200px;
+    margin:30px auto;
+    padding:20px;
+    background:white;
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.2),
+        0 8px 20px rgba(0,0,0,0.15),
+        inset 0 0 10px rgba(0,0,0,0.1);
+}
