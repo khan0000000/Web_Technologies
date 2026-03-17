@@ -1,0 +1,40 @@
+/* Container clears floats */
+.container {
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  float: left;
+  width: 25%;
+  background-color: #90be6d;
+  padding: 20px;
+}
+
+/* Main content */
+.main-content {
+  float: right;
+  width: 70%;
+  padding: 20px;
+  background-color: #f9c74f;
+}
+
+/* Article images */
+.float-left {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+/* Clear floats after each article */
+article::after {
+  content: "";
+  display: table;
+  clear: both;
+}

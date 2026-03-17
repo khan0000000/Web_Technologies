@@ -1,0 +1,68 @@
+/* ===========================
+   Show/Hide Utilities
+   =========================== */
+.hidden-mobile {
+  display: block;
+}
+
+.hidden-desktop {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile { display: none; }
+  .hidden-desktop { display: block; }
+}
+
+/* ===========================
+   Spacing Utilities
+   =========================== */
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.pt-10 { padding-top: 10px; }
+.pt-20 { padding-top: 20px; }
+.pb-10 { padding-bottom: 10px; }
+.pb-20 { padding-bottom: 20px; }
+
+/* ===========================
+   Text Alignment Utilities
+   =========================== */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+@media (min-width: 768px) {
+  .text-left-md { text-align: left; }
+  .text-center-md { text-align: center; }
+  .text-right-md { text-align: right; }
+}
+
+@media (min-width: 1024px) {
+  .text-left-lg { text-align: left; }
+  .text-center-lg { text-align: center; }
+  .text-right-lg { text-align: right; }
+}
+
+/* ===========================
+   Flex Utilities
+   =========================== */
+.flex-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+
+.box {
+  background-color: #f3722c;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 100px;
+}

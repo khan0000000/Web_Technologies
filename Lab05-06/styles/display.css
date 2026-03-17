@@ -1,0 +1,44 @@
+/* Block vs Inline vs Inline-Block */
+.block-box {
+  display: block;
+  width: 100%;
+  background-color: #f94144;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.inline-box {
+  display: inline;
+  background-color: #577590;
+  color: white;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.inline-block-box {
+  display: inline-block;
+  width: 120px;
+  background-color: #f3722c;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Table display */
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  border: 1px solid #333;
+  padding: 8px;
+}

@@ -1,0 +1,54 @@
+/* Fixed header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f94144;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+/* Container */
+.container {
+  display: flex;
+  margin-top: 80px; /* space for fixed header */
+}
+
+/* Sticky sidebar */
+.sticky-sidebar {
+  position: sticky;
+  top: 80px;
+  width: 25%;
+  background-color: #90be6d;
+  padding: 20px;
+  height: fit-content;
+}
+
+/* Main content */
+.main-content {
+  width: 75%;
+  padding: 20px;
+  background-color: #f9c74f;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 2px solid #333;
+  padding: 20px;
+  z-index: 2000;
+  width: 50%;
+}
+
+.modal-content .close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
